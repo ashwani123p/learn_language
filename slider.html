@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="footer.css">
+
+<style>
+  .nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
+</style>
+</head>
+<body>
+  <script type="text/javascript">
+    $('#myModal').modal('show');
+  </script>
+    <div class="row">
+      <div class="col-12">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#id1" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="id1">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Applications
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+         <button class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">
+    Sign-in</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Login/Registration - <a href="http://www.jquery2dotnet.com">jquery2dotnet.com</a></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Login">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email1" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary btn-sm">
+                                            Submit</button>
+                                        <a href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="Registration">
+                                <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Name</label>
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <select class="form-control">
+                                                    <option>Mr.</option>
+                                                    <option>Ms.</option>
+                                                    <option>Mrs.</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <input type="text" class="form-control" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-2 control-label">
+                                        Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile" class="col-sm-2 control-label">
+                                        Mobile</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                            Save & Continue</button>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="OR" class="hidden-xs">
+                            OR</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                            <div class="col-md-12">
+                                <h3>
+                                    Sign in with</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                        Google</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+     </form>
+   
+  </div>
+</nav>
+</div>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="python.jpg" alt="First slide" style="height:300px">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="c++.jpg" alt="Second slide" style="height:300px">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="ruby.jpg" alt="Third slide" style="height:300px">
+    </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="java.jpg" alt="Fourth slide" style="height:300px">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Java</h4>
+        <p class="card-text">Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Python</h4>
+        <p class="card-text">Python is a widely used high-level programming language for general-purpose programming.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Ruby</h4>
+        <p class="card-text">Ruby is a dynamic, reflective, object-oriented, general-purpose programming language.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">C++</h4>
+        <p class="card-text">C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-section">
+    <div class="footer">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4 footer-one">
+          <div class="foot-logo">
+              <img src="http://smarthead.ancorathemes.com/wp-content/uploads/2016/12/footer_logo.png">
+          </div> 
+           
+           <p>Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home
+                </p>
+            <div class="social-icons"> 
+               <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+               <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2 footer-two">
+           <h5>Quick Links</h5>
+              <ul>
+                    <li><a href="#"> About Us</a> </li>
+                    <li><a href="#"> Our News</a> </li>
+                    <li><a href="#"> Our Services</a> </li>
+                    <li><a href="#"> Contact Us</a> </li>
+                  </ul>
+                  
+        </div>
+        <div class="col-md-2 footer-three">
+           <h5>Services</h5>
+              <ul>
+                    <li><a href="#"> About Us</a> </li>
+                    <li><a href="#"> Our News</a> </li>
+                    <li><a href="#"> Our Services</a> </li>
+                    <li><a href="#"> Contact Us</a> </li>
+                  </ul>
+                  
+        </div>
+        <div class="col-md-4 footer-four">
+           <h5>Contact Us</h5>
+             <img src="http://iacademy.mikado-themes.com/wp-content/uploads/2017/05/footer-img-1.png">  
+                  
+        </div>
+        
+    
+    </div>
+    
+    
+    
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+</div>
+<div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 ">
+              <div class="copyright-text">
+                <p>CopyRight © 2017 Digital All Rights Reserved</p>
+              </div>
+            </div> <!-- End Col -->
+            <div class="col-sm-6  ">
+                <div class="copyright-text pull-right">
+                <p> <a href="#">Home</a> | <a href="#">Privacy</a> |<a href="#">Terms & Conditions</a> | <a href="#">Refund Policy</a> </p>
+              </div>          
+                          
+            </div> <!-- End Col -->
+          </div>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
